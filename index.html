@@ -8,9 +8,6 @@
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            background-color: #FFFFFF
-        ;
-            color: #333;
             margin: 0;
             padding: 0;
         }
@@ -21,19 +18,26 @@
             text-align: center;
         }
         main {
-            margin: 20px auto;
-            max-width: 800px;
-            background: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(255, 255, 255, 0.9); /* Slight transparency for overlap effect */
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 600px;
+            text-align: center;
         }
         img {
-            max-width: 1000%;
-            height: auto;
-            display: block;
-            margin: 20px auto;
-            border-radius: 8px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1; /* Moves the image behind other elements */
         }
         footer {
             text-align: center;
@@ -45,22 +49,15 @@
     </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome</h1>
-    </header>
-    <main>
-
-        <p>Hello! My name is Zofia Bukowska. I'm just girl</p>
-        
-
-        
-
-        <img src="https://ih1.redbubble.net/image.5458607799.3867/raf,360x360,075,t,fafafa:ca443f4786.jpg" alt="Sample Picture" />
-
-        <p>Feel free to reach out to me via <a href="mailto:youremail@example.com">email</a> for collaborations or discussions.</p>
-    </main>
-    <footer>
-        <p>&copy; 2024 Zofia Bukowska. All rights reserved.</p>
-    </footer>
+<header>
+    <h1>willkommen</h1>
+</header>
+<img src="https://ih1.redbubble.net/image.5458607799.3867/raf,360x360,075,t,fafafa:ca443f4786.jpg" alt="Sample Picture" />
+<main>
+    <p>Hello! My name is Zofia Bukowska. I'm just a girl.</p>
+</main>
+<footer>
+    <p>&copy; 2024 Zofia Bukowska. All rights reserved.</p>
+</footer>
 </body>
 </html>
